@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 /* Step 1
  *
  * Declare a variable named "unicorn"
@@ -332,7 +333,21 @@ var installLinux = function(linux) {
  * @return {Bool when False, String when True}
  *
  */
-
+var drink = function(beer) {
+  if(beers[beer] === undefined) {
+    return false;
+  }else{
+    if(typeof beers[beer] === "object") {
+      let tempStr = `This ${beer} is `;
+      for(let i = 0; i < beers[beer].length; i++) {
+        tempStr += beers[beer][i] + " and ";
+      }
+      return tempStr;
+    }else{
+      return `This ${beer} is ${beers[beer]}.`;
+    }
+  }
+};
 
 /* Step 24
  *
