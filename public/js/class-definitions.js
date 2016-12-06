@@ -1104,7 +1104,7 @@ var christmasPresent = new Box(new Shape(3), false);
 
 // Create 2 doors
 var automaticDoor = new Door(true);
-var bankVault;
+var bankVault = new Door(false);
 
 // Create 2 shoes
 var rubySlippers;
