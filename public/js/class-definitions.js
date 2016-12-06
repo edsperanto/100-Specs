@@ -1088,7 +1088,7 @@ class Meal {
 
 // Create 2 different species of animals
 var george = new Animal("Monkey", "male");
-var nemo;var nemo = new Animal("Fish", "male");
+var nemo = new Animal("Fish", "male");
 
 // Create 2 different vehicles
 var civic = new Vehicle("Honda", "Civic");
@@ -1344,9 +1344,9 @@ Meal.prototype.containsJunkFood = function() {
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
+var warmBloodedAnimal = george.isWarmBlooded();
+var coldBloodedAnimal = nemo.isWarmBlooded();
+var notWarmOrColdAnimal = new Animal("Edward", "Human").isWarmBlooded();
 
 
 /* Step 92
