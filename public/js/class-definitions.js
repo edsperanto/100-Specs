@@ -482,7 +482,13 @@ var purchaseLaptop = function(laptop) {
  * @return {Bool}
  *
  */
-
+var canTalkAbout = function(club) {
+  if(club !== club_name) {
+    return true;
+  }else{
+    return false;
+  }
+};
 
 /* Step 30
  *
