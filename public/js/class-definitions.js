@@ -309,11 +309,7 @@ var addNumbers = function(num1, num2) {
  *
  */
 var installLinux = function(linux) {
-  if(linuxFlavors.indexOf(linux) !== -1) {
-    return true;
-  }else{
-    return false;
-  }
+  return (linuxFlavors.indexOf(linux) !== -1) ? true : false;
 };
 
 /* Step 23
@@ -361,11 +357,7 @@ var drink = function(beer) {
  *
  */
 var browseURL = function(browser) {
-  if(browsers[browser] === undefined) {
-    return false;
-  }else{
-    return browsers[browser];
-  }
+  return(browsers[browser] === undefined) ? false : browsers[browser];
 };
 
 /* Step 25
@@ -462,11 +454,8 @@ Person.prototype.earnMoney = function(amount) {
  *
  */
 var purchaseLaptop = function(laptop) {
-  if(laptopCosts[laptop] !== undefined) {
-    return laptopCosts[laptop].toString();
-  }else{
-    return -1;
-  }
+  return (laptopCosts[laptop] !== undefined) ?
+  laptopCosts[laptop].toString() : -1;
 };
 
 /* Step 29
@@ -481,11 +470,7 @@ var purchaseLaptop = function(laptop) {
  *
  */
 var canTalkAbout = function(club) {
-  if(club !== club_name) {
-    return true;
-  }else{
-    return false;
-  }
+  return (club !== club_name) ? true : false;
 };
 
 /* Step 30
@@ -662,11 +647,7 @@ function Stapler(newColor, newMaxPapers) {
   this.maxPapers = newMaxPapers;
 }
 Stapler.prototype.staplePapers = function(num) {
-  if(num <= this.maxPapers) {
-    return true;
-  }else{
-    return false;
-  }
+  return (num <= this.maxPapers) ? true : false;
 };
 
 /* Step 35
@@ -718,11 +699,7 @@ Scientist.prototype.addDiscipline = function(newDiscipline) {
   return this.disciplines;
 };
 Scientist.prototype.checkDiscipline = function(discipline) {
-  if(this.disciplines.indexOf(discipline) !== -1) {
-    return true;
-  }else{
-    return false;
-  }
+  return (this.disciplines.indexOf(discipline) !== -1) ? true : false;
 };
 Scientist.prototype.addDiscovery = function(newDiscovery) {
   this.discoveries.push(newDiscovery);
@@ -984,11 +961,7 @@ class Vehicle {
  */
 class Shape {
   constructor(newSides) {
-    if(newSides >= 3) {
-      this.sides = newSides;
-    }else{
-      this.sides = null;
-    }
+    this.sides = (newSides >= 3) ? newSides : null;
   }
 }
 
@@ -1169,11 +1142,8 @@ Animal.prototype.isWarmBlooded = function() {
  *
  */
 Vehicle.prototype.drive = function(newStreetName) {
-  if(typeof newStreetName === "string" && newStreetName !== "") {
-    return `Driving on ${newStreetName}`;
-  }else{
-    return "Driving forward";
-  }
+  return (typeof newStreetName === "string" && newStreetName !== "") ?
+  `Driving on ${newStreetName}` : "Driving forward";
 };
 
  /* Step 83
@@ -1241,11 +1211,7 @@ Box.prototype.openBox = function() {
  *
  */
 Door.prototype.openClose = function() {
-  if(this.isOpen) {
-    this.isOpen = false;
-  }else{
-    this.isOpen = true;
-  }
+  this.isOpen = (this.isOpen) ? false : true;
   return this.isOpen;
 };
 
@@ -1268,11 +1234,7 @@ Shoe.prototype.findShoes = function() {
  *
  */
 House.prototype.isATallStory = function(storiesTooTall) {
-  if(this.stories >= storiesTooTall) {
-    return true;
-  }else{
-    return false;
-  }
+  return (this.stories >= storiesTooTall) ? true : false;
 };
 
  /* Step 88
@@ -1285,11 +1247,7 @@ House.prototype.isATallStory = function(storiesTooTall) {
  *
  */
 Lightbulb.prototype.flipSwitch = function(on) {
-  if(on === "on") {
-    this.isOn = true;
-  }else{
-    this.isOn = false;
-  }
+  this.isOn = (on === "on") ? true : false;
   return this.isOn;
 };
 
@@ -1301,11 +1259,8 @@ Lightbulb.prototype.flipSwitch = function(on) {
  *
  */
 Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek) {
-  if(this.flavor === "chocolate" && dayOfTheWeek === "Monday") {
-    return true;
-  }else{
-    return false;
-  }
+  return (this.flavor === "chocolate" && dayOfTheWeek === "Monday") ?
+  true : false;
 };
 
  /* Step 90
