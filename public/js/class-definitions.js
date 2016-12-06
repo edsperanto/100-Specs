@@ -617,7 +617,6 @@ SolarSystem.prototype.removePlanet = function(planet) {
  *   marries
  *
  */
- //step 27
 function PrincessLeia(newName, newMoney, newAge, newGender) {
   Person.call(this, newName, newMoney, newAge, newGender);
   this.isInTrouble = null;
@@ -658,7 +657,17 @@ PrincessLeia.prototype.marries = function(human) {
  *   staplePapers
  *
  */
-
+function Stapler(newColor, newMaxPapers) {
+  this.color = newColor;
+  this.maxPapers = newMaxPapers;
+}
+Stapler.prototype.staplePapers = function(num) {
+  if(num <= this.maxPapers) {
+    return true;
+  }else{
+    return false;
+  }
+};
 
 /* Step 35
  *
