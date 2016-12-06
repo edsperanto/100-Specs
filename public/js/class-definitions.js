@@ -307,7 +307,13 @@ var addNumbers = function(num1, num2) {
  * @return {Bool}
  *
  */
-
+var installLinux = function(linux) {
+  if(linuxFlavors.indexOf(linux) !== -1) {
+    return true;
+  }else{
+    return false;
+  }
+};
 
 /* Step 23
  *
