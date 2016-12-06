@@ -1355,8 +1355,8 @@ var notWarmOrColdAnimal = new Animal("Edward", "Human").isWarmBlooded();
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+var streetDriving = civic.drive("Hollywood Hills");
+var forwardDriving = civic.drive();
 
 
  /* Step 93
