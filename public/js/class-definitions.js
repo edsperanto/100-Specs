@@ -1107,7 +1107,7 @@ var automaticDoor = new Door(true);
 var bankVault = new Door(false);
 
 // Create 2 shoes
-var rubySlippers;
+var rubySlippers = new Shoe(7, "red");
 var dressShoes;
 
 // Create 2 houses
