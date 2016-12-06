@@ -405,7 +405,15 @@ var listLivingOrgClass = function() {
  * @return {String}
  *
  */
-
+var favoritePlanet = function(planet) {
+  if(planets.indexOf(planet) !== -1) {
+    let rand = Math.floor(Math.random() * 8);
+    let randPlanet = planets[rand];
+    return `I'm from ${planet}, but I wish I could go to ${randPlanet}.`;
+  }else{
+    return `${planet} is not a planet!`;
+  }
+};
 
 /* Step 27
  *
