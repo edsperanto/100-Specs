@@ -1050,7 +1050,11 @@ class House {
  * Lightbulb class
  * @param {boolean} isOn Whether the light is on or off
  */
-
+class Lightbulb {
+  constructor(onOffStatus) {
+    this.isOn = onOffStatus;
+  }
+}
 
 /**
  * Step 58
