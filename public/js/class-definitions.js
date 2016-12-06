@@ -1374,9 +1374,9 @@ var polygon = new Shape(666).getType();
  * Call the openBox method on two Box instances
  * and assign the values to each variable below.
  *
- */
-var openAClosedBox = christmasPresent.openBox();
-var closeAnOpenBox = catBox.openBox();
+ */ // 67-69
+var openAClosedBox = new Box("not a bomb", false).openBox();
+var closeAnOpenBox = new Box("Pandora", true).openBox();
 
 
  /* Step 95
@@ -1385,8 +1385,8 @@ var closeAnOpenBox = catBox.openBox();
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor = bankVault.openClose();
-var closeAnOpenDoor = automaticDoor.openClose();
+var openAClosedDoor = new Door(false).openClose();
+var closeAnOpenDoor = new Door(true).openClose();
 
 
 /* Step 96
