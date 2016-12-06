@@ -1243,11 +1243,10 @@ Box.prototype.openBox = function() {
 Door.prototype.openClose = function() {
   if(this.isOpen) {
     this.isOpen = false;
-    return false;
   }else{
     this.isOpen = true;
-    return true;
   }
+  return this.isOpen;
 };
 
 /* Step 86
@@ -1285,7 +1284,14 @@ House.prototype.isATallStory = function(storiesTooTall) {
  * Return true if isOn is true, false otherwise.
  *
  */
-
+Lightbulb.prototype.flipSwitch = function(on) {
+  if(on === "on") {
+    this.isOn = true;
+  }else{
+    this.isOn = false;
+  }
+  return this.isOn;
+};
 
  /* Step 89
  *
