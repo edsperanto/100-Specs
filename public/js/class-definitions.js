@@ -377,7 +377,14 @@ var browseURL = function(browser) {
  * @return {String}
  *
  */
-
+var listLivingOrgClass = function() {
+  let tempStr = "<ul>";
+  for(let i = 0; i < livingOrganismClassification.length; i++) {
+    tempStr += "<li>" + livingOrganismClassification[i] + "</li>";
+  }
+  tempStr += "</ul>";
+  return tempStr;
+};
 
 /* Step 26
  *
