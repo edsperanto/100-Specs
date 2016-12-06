@@ -1111,7 +1111,7 @@ var rubySlippers = new Shoe(7, "red");
 var dressShoes = new Shoe(10, "black");
 
 // Create 2 houses
-var singleStory;
+var singleStory = new House(1);
 var twoStory;
 
 // Create 2 lightbulbs
