@@ -1123,7 +1123,7 @@ var chocolateChip = new Cookie("chocolate");
 var gingerbread = new Cookie("gingerbread");
 
 // Create 2 different meals
-var breakfast;
+var breakfast = new Meal(["cereal", "milk"]);
 var dinner;
 
 
