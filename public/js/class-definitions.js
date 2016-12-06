@@ -1099,7 +1099,7 @@ var square = new Shape(4);
 var hexagon = new Shape(6);
 
 // Create 2 boxes
-var catBox;
+var catBox = new Box(new Animal("Cat", "male"), true);
 var christmasPresent;
 
 // Create 2 doors
