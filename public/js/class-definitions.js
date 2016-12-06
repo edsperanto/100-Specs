@@ -463,7 +463,13 @@ class Person {
  * @return {String}
  *
  */
-
+var purchaseLaptop = function(laptop) {
+  if(laptopCosts[laptop] !== undefined) {
+    return laptopCosts[laptop].toString();
+  }else{
+    return -1;
+  }
+};
 
 /* Step 29
  *
