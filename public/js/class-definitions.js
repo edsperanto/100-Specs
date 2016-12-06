@@ -966,7 +966,12 @@ class Animal {
  * @param {string} make The vehicle's make
  * @param {string} model The vehicle's model
  */
-
+class Vehicle {
+  constructor(newMake, newModel) {
+    this.make = newMake;
+    this.model = newModel;
+  }
+}
 
 /**
  * Step 52
