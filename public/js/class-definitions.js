@@ -952,7 +952,12 @@ BankAccount.prototype.rob = function(amount) {
  * @param {string} species The animal species
  * @param {string} gender  male or female
  */
-
+class Animal {
+  constructor(newSpecies, newGender) {
+    this.species = newSpecies;
+    this.gender = newGender;
+  }
+}
 
 /**
  * Step 51
