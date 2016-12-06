@@ -1365,8 +1365,8 @@ var forwardDriving = civic.drive();
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
+var decagon = new Shape(10).getType();
+var polygon = new Shape(666).getType();
 
 
 /* Step 94
