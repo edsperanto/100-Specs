@@ -360,7 +360,13 @@ var drink = function(beer) {
  * @return {String if true else return false}
  *
  */
-
+var browseURL = function(browser) {
+  if(browsers[browser] === undefined) {
+    return false;
+  }else{
+    return browsers[browser];
+  }
+};
 
 /* Step 25
  *
